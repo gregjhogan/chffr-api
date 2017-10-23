@@ -3,6 +3,11 @@ The public chffr API. Get access to your data. Do cool things with it!
 == Install requirements with ==
 # pip install -r requirements.txt
 
+== Create new google api credential ==
+Log into the google api console: https://console.developers.google.com/apis/credentials
+Create a new "OAuth client ID" credential of type "other"
+Replace the DEFAULT_CLIENT_ID and DEFAULT_CLIENT_SECRET values in ./get_chffr_token.py
+
 == Log in with ==
 # ./get_chffr_token.py
 This creates a token so you only have to log in once.
@@ -17,5 +22,5 @@ Get your routes and your pictures!
 # cd explorer
 # python -m SimpleHTTPServer
 
-And visit localhost:8000
+And visit http://localhost:8000
 
